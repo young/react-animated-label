@@ -1,8 +1,8 @@
 {
   "name": "react-animated-label",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An animated label component for react",
-  "main": "lib/react-animated-label.js",
+  "main": "dist/react-animated-label.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/young/react-animated-label",
   "dependencies": {
-    "react": "^0.13.3"
   },
   "devDependencies": {
-    "babel": "^5.2.17"
+    "babel": "^5.2.17",
+    "react": "^0.13.3"
   }
 }
