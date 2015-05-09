@@ -1,9 +1,133 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="https://rawgit.com/young/react-animated-label/master/react-animated-label.css">
+	<title>React animated label</title>
 </head>
+<style>
+	.animated-label {
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  -o-user-select: none;
+	  user-select: none;
+	}
+	.animated-label ul {
+	  list-style: none;
+	  padding: 0;
+	  margin: 0;
+	}
+	.animated-label,
+	.animated-label.small {
+	  font-size: 18px;
+	  line-height: 18px;
+	}
+	.animated-label .animated-digit,
+	.animated-label.small .animated-digit {
+	  height: 18px;
+	  width: 14px;
+	}
+	.animated-label.medium {
+	  font-size: 36px;
+	  line-height: 36px;
+	}
+	.animated-label.medium .animated-digit {
+	  height: 36px;
+	  width: 23px;
+	}
+	.animated-label.large {
+	  font-size: 70px;
+	  line-height: 70px;
+	}
+	.animated-label.large .animated-digit {
+	  height: 70px;
+	  width: 40px;
+	}
+	.animated-label .al-enter,
+	.animated-label .al-leave {
+	  -moz-transition: 0.6s linear opacity;
+	  -webkit-transition: 0.6s linear opacity;
+	  -o-transition: 0.6s linear opacity;
+	  -ms-transition: 0.6s linear opacity;
+	  transition: 0.6s linear opacity;
+	  opacity: 0;
+	}
+	.animated-label .al-enter.al-enter-active {
+	  opacity: 1;
+	}
+	.animated-label .al-leave.al-leave-active {
+	  opacity: 0;
+	}
+	.animated-label .animated-digit {
+	  overflow: hidden;
+	  margin-top: 3px;
+	  margin: 0;
+	  padding: 0;
+	  position: relative;
+	  display: inline-block;
+	}
+	.animated-label .animated-digit .wrapper[data-position] {
+	  position: absolute;
+	  transition: 0.3s all 0.5s ease-in-out;
+	  text-align: center;
+	}
+	.animated-label .animated-digit .wrapper[data-position="0"] {
+	  top: 0%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="1"] {
+	  top: -100%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="2"] {
+	  top: -200%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="3"] {
+	  top: -300%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="4"] {
+	  top: -400%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="5"] {
+	  top: -500%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="6"] {
+	  top: -600%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="7"] {
+	  top: -700%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="8"] {
+	  top: -800%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="9"] {
+	  top: -900%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="."] {
+	  top: -1000%;
+	}
+	.animated-label .animated-digit .wrapper[data-position=","] {
+	  top: -1100%;
+	}
+	.animated-label .animated-digit .wrapper[data-position="$"] {
+	  top: -1200%;
+	}
+	.animated-label .animated-digit .wrapper[data-position=":"] {
+	  top: -1300%;
+	}
+	@media only screen and (max-width: 1050px) {
+	  animated-label.large {
+	    font-size: 50px;
+	    line-height: 50px;
+	  }
+	  animated-label.large .animated-digit {
+	    height: 50px;
+	    width: 30px;
+	  }
+	  animated-label.large .animated-digit {
+	    top: -13px;
+	  }
+	}
 
+</style>
 <body>
 
 </body>
+<script type="text/javascript" src='bundle.js'></script>
 </html>
