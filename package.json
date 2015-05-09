@@ -1,6 +1,6 @@
 {
   "name": "react-animated-label",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An animated label component for react",
   "main": "lib/react-animated-label.js",
   "scripts": {
