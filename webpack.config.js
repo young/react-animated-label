@@ -6,7 +6,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: "react-animated-label!css" }
+            { test: /\.css$/, loader: "style!css" }
         ]
     }
 };

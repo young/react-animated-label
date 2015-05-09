@@ -6,8 +6,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-require('./react-animated-label.css');
-
 /*eslint-disable */
 var ReactCSSTransitionGroup = _react2['default'].addons.CSSTransitionGroup;
 /*eslint-enable */
