@@ -2,6 +2,8 @@
 
 An animated label component for React.js
 
+Demo is [here](http://young.github.io/react-animated-label/)
+
 ## Installation
 
 ``` sh
