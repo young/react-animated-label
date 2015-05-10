@@ -1,8 +1,19 @@
 <html>
 <head>
 	<title>React animated label</title>
+	<script src="https://fb.me/react-with-addons-0.13.3.min.js"></script>
+	<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 </head>
 <style>
+	html {
+		background-color: rgb(0, 150, 169);
+		font-family: sans-serif;
+		font-size: 11px;
+	}
+	#content {
+		padding-left: 10px;
+	}
 	.animated-label {
 	  -webkit-user-select: none;
 	  -moz-user-select: none;
@@ -127,7 +138,77 @@
 
 </style>
 <body>
+<div id='content'>
 
+</div>
 </body>
-<script type="text/javascript" src='bundle.js'></script>
+
+<script type="text/jsx">
+
+/*eslint-disable */
+var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+var PropTypes = React.PropTypes;
+var AnimatedLabel = React.createClass({
+	getInitialState: function() {
+		this._startRandomNumberGenerator();
+		return {
+			rand: '0.00'
+		}
+	},
+	_startRandomNumberGenerator: function() {
+    setInterval(function() {
+      var rand = (Math.random() * 1000).toFixed(2);
+    	this.setState({rand: rand});
+    }.bind(this), 2000);
+  },
+  /**
+   * Create the animated label component
+   * @return {React.element} The label element
+   */
+  _createLabel: function() {
+    // Split the input into individual characters
+    var vals = [].concat(this.state.rand.split(''));
+    /*eslint-disable */
+    return vals.map(function(item, index) {
+      return (
+        <div className='animated-digit' key={index}>
+          <ul className='wrapper' data-position={item}>
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>.</li>
+            <li>,</li>
+            <li>$</li>
+            <li>:</li>
+          </ul>
+        </div>
+      );
+    });
+    /*eslint-enable */
+  },
+  render: function() {
+    return (
+    	<div>
+    	<h1>React Animated Label Demo</h1>
+	      <ReactCSSTransitionGroup className='animated-label medium' transitionName='ral' component="span">
+	        {this._createLabel()}
+	      </ReactCSSTransitionGroup>
+	    </div>
+    );
+  }
+
+});
+	React.render(
+	  <AnimatedLabel />,
+	  document.getElementById('content')
+	);
+
+</script>
 </html>
