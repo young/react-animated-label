@@ -27,4 +27,4 @@ React.createClass({
 
 ```
 
-Inspired by Chartbeat angular [cb-animated-label](https://github.com/chartbeat-labs/chartbeat-angular/tree/master/src/components/cb-animated-label)
+Inspired by Chartbeat's [cb-animated-label](https://github.com/chartbeat-labs/chartbeat-angular/tree/master/src/components/cb-animated-label)
