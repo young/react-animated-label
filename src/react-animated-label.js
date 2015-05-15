@@ -1,9 +1,7 @@
 import React, { PropTypes } from 'react';
+import {ReactCSSTransitionGroup} from 'react/addons';
 import './react-animated-label.less';
 
-/*eslint-disable */
-const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
-/*eslint-enable */
 const AnimatedLabel = React.createClass({
   propTypes: {
     value: PropTypes.string.isRequired
