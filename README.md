@@ -45,8 +45,7 @@ React.createClass({
 
 ## Note
 You must include the CSS for this component to work.
-Use either webpack (`import 'node_modules/react-animated-label/lib/react-animated-label.css';`)
-or directly include the stylesheet in your page (`<link rel="stylesheet" type="text/css" href="node_modules/react-animated-label/lib/react-animated-label.css">`)
+Include the component stylesheet in your page `<link rel="stylesheet" type="text/css" href="node_modules/react-animated-label/lib/react-animated-label.css">`
 
 
 
