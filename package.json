@@ -2,7 +2,7 @@
   "name": "react-animated-label",
   "version": "0.2.4",
   "description": "An animated label component for react",
-  "main": "dist/react-animated-label.js",
+  "main": "lib/react-animated-label.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
