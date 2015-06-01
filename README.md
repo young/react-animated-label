@@ -2,7 +2,9 @@
 
 An animated label component for React.js
 
-Demo is [here](http://young.github.io/react-animated-label/)
+[Demo](http://young.github.io/react-animated-label/)
+
+[![NPM](https://nodei.co/npm/react-animated-label.png?downloads=true&downloadRank=true)](https://nodei.co/npm/react-animated-label/)
 
 ## Installation
 
