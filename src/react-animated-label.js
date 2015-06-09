@@ -14,6 +14,7 @@ const AnimatedLabel = React.createClass({
     // Split the input into individual characters
     const vals = [].concat(this.props.value.split(''));
     /*eslint-disable */
+    // For each character, create a list element containing all possible characters
     return vals.map((item, index) => {
       return (
         <div className='animated-digit' key={index}>
