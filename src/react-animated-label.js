@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import {ReactCSSTransitionGroup} from 'react/addons';
-import './react-animated-label.less';
 
 const AnimatedLabel = React.createClass({
   propTypes: {
@@ -49,4 +48,4 @@ const AnimatedLabel = React.createClass({
 
 });
 
-module.exports = AnimatedLabel;
+export default AnimatedLabel;

@@ -1,10 +1,10 @@
 {
   "name": "react-animated-label",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "An animated label component for react",
   "main": "lib/react-animated-label.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "node_modules/.bin/babel --stage 1 ./src/react-animated-label.js --out-file ./lib/react-animated-label.js"
   },
   "repository": {
     "type": "git",
